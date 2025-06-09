@@ -23,21 +23,30 @@ const textVariants = {
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex items-center justify-center py-12 px-4">
-      <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
+    <section className="relative w-full min-h-screen flex items-center justify-center py-12 px-4 pt-32 overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50" />
+      
+      {/* Decorative Circles */}
+      <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" />
+      <div className="absolute top-1/3 -right-20 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000" />
+      <div className="absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000" />
+
+      {/* Content Container */}
+      <div className="relative max-w-7xl w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Left: Text Content */}
         <div className="flex-1 text-center md:text-left">
           <motion.h1
-            className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 mb-8 leading-tight"
+            className="text-6xl md:text-7xl lg:text-8xl font-extrabold mb-8 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900"
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false }}
             variants={textVariants}
             custom={0}
           >
             <Typewriter
               words={["Insta.Ltd"]}
               loop={1}
-            //   cursor
               cursorStyle='|'
               typeSpeed={120}
               deleteSpeed={50}
@@ -47,7 +56,8 @@ const Hero = () => {
           <motion.p
             className="text-xl md:text-2xl text-gray-700 mb-10"
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false }}
             variants={textVariants}
             custom={1}
           >
@@ -55,9 +65,10 @@ const Hero = () => {
           </motion.p>
           <motion.a
             href="#"
-            className="inline-block bg-gray-900 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow hover:bg-gray-800 transition-colors duration-200"
+            className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false }}
             variants={textVariants}
             custom={2}
             whileHover={{ scale: 1.05 }}
@@ -66,6 +77,7 @@ const Hero = () => {
             Get in touch
           </motion.a>
         </div>
+
         {/* Right: Images */}
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center items-center">
           <motion.img
@@ -73,7 +85,8 @@ const Hero = () => {
             alt="Team working together at Insta.Ltd"
             className="w-full max-w-lg h-auto object-contain rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all duration-300 hover:scale-[1.02]"
             initial="hiddenLeft"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false }}
             variants={imageVariants}
           />
           <motion.img
@@ -81,7 +94,8 @@ const Hero = () => {
             alt="Financial growth and teamwork"
             className="w-full max-w-lg h-auto object-contain rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all duration-300 hover:scale-[1.02] md:translate-y-8"
             initial="hiddenRight"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false }}
             variants={imageVariants}
           />
           <motion.img
@@ -89,7 +103,8 @@ const Hero = () => {
             alt="Team brainstorming and planning"
             className="w-full max-w-lg h-auto object-contain rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.16)] transition-all duration-300 hover:scale-[1.02] md:-translate-y-8 md:col-span-2"
             initial="hiddenBottom"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: false }}
             variants={imageVariants}
           />
         </div>
