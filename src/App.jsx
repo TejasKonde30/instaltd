@@ -10,6 +10,8 @@ import HRService from './pages/services/HRService'
 import TelecallingService from './pages/services/TelecallingService'
 import DigitalMarketingService from './pages/services/DigitalMarketingService'
 import AboutUs from './pages/AboutUs'
+import ServicesPage from './pages/Services'
+import Resources from './pages/Resources'
 
 const Home = () => {
   return (
@@ -30,10 +32,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/crm" element={<CRMService />} />
           <Route path="/services/hr" element={<HRService />} />
           <Route path="/services/telecalling" element={<TelecallingService />} />
           <Route path="/services/digital-marketing" element={<DigitalMarketingService />} />
+          <Route path="/resources" element={<Resources />} />
         </Routes>
       </div>
     </Router>
