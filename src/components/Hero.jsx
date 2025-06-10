@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
-import teamIllustration1 from '../assets/herosection.png';
-import teamIllustration2 from '../assets/herosection2.png';
-import teamIllustration3 from '../assets/hero3.jpg';
+import teamIllustration1 from '../assets/herolatest2.jpg';
+import teamIllustration2 from '../assets/herolatest1.jpg';
+import teamIllustration3 from '../assets/herolatest3.jpg';
 
 const imageVariants = {
   hiddenLeft: { opacity: 0, x: -80 },

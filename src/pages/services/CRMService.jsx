@@ -44,19 +44,57 @@ const CRMService = () => {
           </p>
         </motion.div>
 
-        {/* Main Image */}
-        {/* <motion.div 
-          className="mb-16 rounded-2xl overflow-hidden shadow-xl"
+        {/* Project Details and Tech Stack Section */}
+        <motion.div 
+          className="mb-16 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 md:p-12 shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <img 
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-            alt="CRM Dashboard" 
-            className="w-full h-[400px] object-cover"
-          />
-        </motion.div> */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Project Details */}
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Our CRM Solution</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Our CRM solution is a comprehensive customer relationship management platform designed to revolutionize how businesses interact with their customers. Built with scalability and user experience in mind, this platform offers a seamless integration of customer data, sales pipeline management, and analytics capabilities. The system is engineered to handle complex business workflows while maintaining an intuitive interface that requires minimal training.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                The platform features real-time data synchronization, advanced reporting tools, and customizable dashboards that provide actionable insights. Our CRM solution is particularly effective for businesses looking to streamline their sales processes, enhance customer service, and make data-driven decisions.
+              </p>
+            </div>
+
+            {/* Tech Stack */}
+            <div className="bg-white rounded-xl p-6 shadow-md">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Technology Stack</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                  <span className="text-2xl">⚛️</span>
+                  <span className="font-semibold">React.js</span>
+                </div>
+                <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                  <span className="text-2xl">🚀</span>
+                  <span className="font-semibold">Node.js</span>
+                </div>
+                <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                  <span className="text-2xl">🗄️</span>
+                  <span className="font-semibold">MongoDB</span>
+                </div>
+                <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                  <span className="text-2xl">🎨</span>
+                  <span className="font-semibold">Tailwind CSS</span>
+                </div>
+                <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                  <span className="text-2xl">🔄</span>
+                  <span className="font-semibold">Redux</span>
+                </div>
+                <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                  <span className="text-2xl">🔒</span>
+                  <span className="font-semibold">JWT Auth</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
