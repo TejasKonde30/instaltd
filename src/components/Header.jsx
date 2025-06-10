@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,19 +53,27 @@ const Header = () => {
         </motion.div>
 
         <nav className="hidden md:flex gap-8 text-lg font-medium">
-          {['Home', 'About Us', 'Our Services', 'Resources'].map((item, index) => (
-            <motion.a
-              key={item}
-              href={`#${item.toLowerCase().replace(' ', '-')}`}
-              className="text-gray-900 hover:text-blue-600 relative group"
+          {[
+            { name: 'Home', path: '/' },
+            { name: 'About Us', path: '/about' },
+            { name: 'Our Services', path: '/services' },
+            { name: 'Resources', path: '/resources' }
+          ].map((item, index) => (
+            <motion.div
+              key={item.name}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
-              {item}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
-            </motion.a>
+              <Link
+                to={item.path}
+                className="text-gray-900 hover:text-blue-600 relative group"
+              >
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+            </motion.div>
           ))}
         </nav>
 

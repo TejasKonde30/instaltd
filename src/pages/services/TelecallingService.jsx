@@ -11,26 +11,26 @@ const TechStackLogo = ({ name, logo, className = "" }) => (
   </div>
 );
 
-const CRMService = () => {
+const TelecallingService = () => {
   const features = [
     {
-      title: "Lead Management",
-      description: "Track and manage leads throughout the entire sales pipeline with our intuitive interface.",
-      icon: "🎯"
+      title: "Call Management",
+      description: "Efficiently manage incoming and outgoing calls with our advanced call routing and queuing system. Ensure no call goes unanswered.",
+      icon: "📞"
     },
     {
-      title: "Customer Analytics",
-      description: "Gain valuable insights into customer behavior and preferences with advanced analytics tools.",
+      title: "Performance Analytics",
+      description: "Track and analyze call center metrics with detailed reports. Monitor call duration, success rates, and agent performance in real-time.",
       icon: "📊"
     },
     {
-      title: "Automated Workflows",
-      description: "Streamline your processes with customizable automated workflows and task management.",
-      icon: "⚡"
+      title: "Quality Monitoring",
+      description: "Record and evaluate calls for quality assurance. Provide feedback and training opportunities to improve service standards.",
+      icon: "🎯"
     },
     {
       title: "Integration Capabilities",
-      description: "Seamlessly integrate with your existing tools and platforms for a unified experience.",
+      description: "Seamlessly integrate with your existing CRM and business tools. Maintain a unified view of customer interactions across platforms.",
       icon: "🔄"
     }
   ];
@@ -61,26 +61,26 @@ const CRMService = () => {
       )
     },
     {
-      name: "Tailwind CSS",
+      name: "WebRTC",
       logo: (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="text-[#06B6D4]">
-          <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+        <svg viewBox="0 0 24 24" fill="currentColor" className="text-[#333333]">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 3a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 7-7 7 7 0 0 0-7-7zm0 2a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5z"/>
         </svg>
       )
     },
     {
-      name: "Redux",
+      name: "Socket.io",
       logo: (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="text-[#764ABC]">
-          <path d="M16.633 16.824h-3.199a.321.321 0 0 1-.32-.322V7.548a.32.32 0 0 1 .32-.32h3.199a.32.32 0 0 1 .32.32v8.954a.32.32 0 0 1-.32.32zM2.265 16.824H5.46a.32.32 0 0 0 .32-.322V7.548a.32.32 0 0 0-.32-.32H2.265a.32.32 0 0 0-.32.32v8.954c0 .177.143.32.32.32zm14.795-1.972a.802.802 0 0 1-.802-.802v-1.605a.802.802 0 0 1 .802-.802h2.563a.802.802 0 0 1 .802.802v1.605a.802.802 0 0 1-.802.802h-2.563zm-14.795 0a.802.802 0 0 1-.802-.802v-1.605a.802.802 0 0 1 .802-.802h2.563a.802.802 0 0 1 .802.802v1.605a.802.802 0 0 1-.802.802H2.265zm14.795-6.42a.802.802 0 0 1-.802-.802V6.825a.802.802 0 0 1 .802-.802h2.563a.802.802 0 0 1 .802.802v1.605a.802.802 0 0 1-.802.802h-2.563zm-14.795 0a.802.802 0 0 1-.802-.802V6.825a.802.802 0 0 1 .802-.802h2.563a.802.802 0 0 1 .802.802v1.605a.802.802 0 0 1-.802.802H2.265z"/>
+        <svg viewBox="0 0 24 24" fill="currentColor" className="text-[#010101]">
+          <path d="M11.936 0C5.344 0 0 5.344 0 11.936s5.344 11.936 11.936 11.936 11.936-5.344 11.936-11.936S18.528 0 11.936 0zm-1.128 16.368c-1.128 0-2.256-.376-3.008-1.128l-.752-.752c-.376-.376-.376-1.128 0-1.504.376-.376 1.128-.376 1.504 0l.752.752c.376.376 1.128.376 1.504 0l5.264-5.264c.376-.376.376-1.128 0-1.504-.376-.376-1.128-.376-1.504 0l-5.264 5.264c-.752.752-1.88.752-2.632 0l-.752-.752c-.752-.752-1.128-1.88-1.128-3.008s.376-2.256 1.128-3.008l5.264-5.264c.752-.752 1.88-1.128 3.008-1.128s2.256.376 3.008 1.128l.752.752c.376.376.376 1.128 0 1.504-.376.376-1.128.376-1.504 0l-.752-.752c-.376-.376-1.128-.376-1.504 0l-5.264 5.264c-.376.376-.376 1.128 0 1.504.376.376 1.128.376 1.504 0l5.264-5.264c.752-.752 1.88-.752 2.632 0l.752.752c.752.752 1.128 1.88 1.128 3.008s-.376 2.256-1.128 3.008l-5.264 5.264c-.752.752-1.88 1.128-3.008 1.128z"/>
         </svg>
       )
     },
     {
-      name: "JWT",
+      name: "Redis",
       logo: (
-        <svg viewBox="0 0 24 24" fill="currentColor" className="text-[#000000]">
-          <path d="M10.2 0v6.456L12 8.928l1.8-2.472V0zm3.6 6.456v3.072l2.904-.96L20.52 3.36l-2.928-.048zM17.496 8.568l-2.88.96v4.992l.48 1.68 7.416-6.144-2.136-1.488zM10.2 16.392v3.072l2.904.96 2.616-5.208-2.88-.96zm0-3.072v-4.992l-2.88-.96L0 8.568l2.136 1.488 7.416 6.144zm0 0l.48-1.68v-4.992L7.704 8.568 4.776 3.312l2.928.048z"/>
+        <svg viewBox="0 0 24 24" fill="currentColor" className="text-[#DC382D]">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 3a7 7 0 0 0-7 7 7 7 0 0 0 7 7 7 7 0 0 0 7-7 7 7 0 0 0-7-7zm0 2a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5z"/>
         </svg>
       )
     }
@@ -97,11 +97,11 @@ const CRMService = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
-            CRM Solutions
+            Telecalling Solutions
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Transform your customer relationships with our comprehensive CRM software. 
-            Manage leads, track interactions, and boost customer satisfaction with our powerful tools.
+            Transform your call center operations with our advanced telecalling software. 
+            Enhance call quality, track performance, and boost productivity with our comprehensive tools.
           </p>
         </motion.div>
 
@@ -115,12 +115,12 @@ const CRMService = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Project Details */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Our CRM Solution</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Our Telecalling Solution</h2>
               <p className="text-gray-700 leading-relaxed">
-                Our CRM solution is a comprehensive customer relationship management platform designed to revolutionize how businesses interact with their customers. Built with scalability and user experience in mind, this platform offers a seamless integration of customer data, sales pipeline management, and analytics capabilities. The system is engineered to handle complex business workflows while maintaining an intuitive interface that requires minimal training.
+                Our telecalling solution is a comprehensive platform designed to revolutionize call center operations. Built with scalability and real-time communication in mind, this platform offers seamless integration of call management, quality monitoring, and performance analytics. The system is engineered to handle high call volumes while maintaining crystal-clear audio quality and minimal latency.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                The platform features real-time data synchronization, advanced reporting tools, and customizable dashboards that provide actionable insights. Our CRM solution is particularly effective for businesses looking to streamline their sales processes, enhance customer service, and make data-driven decisions.
+                The platform features advanced call routing, real-time monitoring, and customizable dashboards that provide actionable insights. Our telecalling solution is particularly effective for businesses looking to streamline their customer service operations, enhance call quality, and make data-driven decisions to improve performance.
               </p>
             </div>
 
@@ -168,16 +168,16 @@ const CRMService = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Benefits</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Increased Efficiency</h3>
-              <p className="text-gray-700">Automate routine tasks and streamline your workflow for better productivity.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Improved Efficiency</h3>
+              <p className="text-gray-700">Optimize call handling and reduce wait times with intelligent call routing and queuing.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Better Customer Insights</h3>
-              <p className="text-gray-700">Understand your customers better with detailed analytics and reporting.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Enhanced Quality</h3>
+              <p className="text-gray-700">Monitor and improve call quality with advanced recording and evaluation tools.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Improved Sales</h3>
-              <p className="text-gray-700">Convert more leads and close deals faster with our sales pipeline tools.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Better Insights</h3>
+              <p className="text-gray-700">Make data-driven decisions with comprehensive analytics and reporting capabilities.</p>
             </div>
           </div>
         </motion.div>
@@ -189,9 +189,9 @@ const CRMService = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Transform Your Customer Relationships?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Transform Your Call Center?</h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Get started with our CRM solution today and see the difference it can make for your business.
+            Get started with our telecalling solution today and see the difference it can make for your business.
           </p>
           <motion.a
             href="#contact"
@@ -207,4 +207,4 @@ const CRMService = () => {
   );
 };
 
-export default CRMService; 
+export default TelecallingService; 

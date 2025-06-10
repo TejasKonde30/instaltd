@@ -11,27 +11,27 @@ const TechStackLogo = ({ name, logo, className = "" }) => (
   </div>
 );
 
-const CRMService = () => {
+const HRService = () => {
   const features = [
     {
-      title: "Lead Management",
-      description: "Track and manage leads throughout the entire sales pipeline with our intuitive interface.",
-      icon: "🎯"
+      title: "Recruitment Management",
+      description: "Streamline your hiring process with our comprehensive recruitment tools. From job posting to candidate selection, we've got you covered.",
+      icon: "📋"
     },
     {
-      title: "Customer Analytics",
-      description: "Gain valuable insights into customer behavior and preferences with advanced analytics tools.",
-      icon: "📊"
+      title: "Payroll Processing",
+      description: "Automate and simplify your payroll operations with our advanced payroll management system. Ensure accurate and timely payments.",
+      icon: "💰"
     },
     {
-      title: "Automated Workflows",
-      description: "Streamline your processes with customizable automated workflows and task management.",
-      icon: "⚡"
+      title: "Employee Self-Service",
+      description: "Empower your employees with self-service portals for leave management, document access, and personal information updates.",
+      icon: "👤"
     },
     {
-      title: "Integration Capabilities",
-      description: "Seamlessly integrate with your existing tools and platforms for a unified experience.",
-      icon: "🔄"
+      title: "Performance Management",
+      description: "Track and evaluate employee performance with our intuitive performance management tools. Set goals, conduct reviews, and drive growth.",
+      icon: "📈"
     }
   ];
 
@@ -97,11 +97,11 @@ const CRMService = () => {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
-            CRM Solutions
+            HR Management Solutions
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Transform your customer relationships with our comprehensive CRM software. 
-            Manage leads, track interactions, and boost customer satisfaction with our powerful tools.
+            Transform your workforce management with our comprehensive HR software. 
+            Streamline recruitment, payroll, attendance, and employee engagement with our powerful tools.
           </p>
         </motion.div>
 
@@ -115,12 +115,12 @@ const CRMService = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Project Details */}
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Our CRM Solution</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">About Our HR Solution</h2>
               <p className="text-gray-700 leading-relaxed">
-                Our CRM solution is a comprehensive customer relationship management platform designed to revolutionize how businesses interact with their customers. Built with scalability and user experience in mind, this platform offers a seamless integration of customer data, sales pipeline management, and analytics capabilities. The system is engineered to handle complex business workflows while maintaining an intuitive interface that requires minimal training.
+                Our HR management solution is a comprehensive platform designed to revolutionize how organizations manage their workforce. Built with scalability and user experience in mind, this platform offers seamless integration of recruitment, payroll, attendance, and employee engagement features. The system is engineered to handle complex HR workflows while maintaining an intuitive interface that requires minimal training.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                The platform features real-time data synchronization, advanced reporting tools, and customizable dashboards that provide actionable insights. Our CRM solution is particularly effective for businesses looking to streamline their sales processes, enhance customer service, and make data-driven decisions.
+                The platform features automated payroll processing, advanced reporting tools, and customizable dashboards that provide actionable insights. Our HR solution is particularly effective for businesses looking to streamline their HR processes, enhance employee satisfaction, and make data-driven decisions.
               </p>
             </div>
 
@@ -168,16 +168,16 @@ const CRMService = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Benefits</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Increased Efficiency</h3>
-              <p className="text-gray-700">Automate routine tasks and streamline your workflow for better productivity.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Streamlined Operations</h3>
+              <p className="text-gray-700">Automate routine HR tasks and streamline your workflow for better efficiency.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Better Customer Insights</h3>
-              <p className="text-gray-700">Understand your customers better with detailed analytics and reporting.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Enhanced Employee Experience</h3>
+              <p className="text-gray-700">Provide self-service tools and better communication channels for your workforce.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Improved Sales</h3>
-              <p className="text-gray-700">Convert more leads and close deals faster with our sales pipeline tools.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Data-Driven Decisions</h3>
+              <p className="text-gray-700">Make informed HR decisions with comprehensive analytics and reporting tools.</p>
             </div>
           </div>
         </motion.div>
@@ -189,9 +189,9 @@ const CRMService = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Transform Your Customer Relationships?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Transform Your HR Management?</h2>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-            Get started with our CRM solution today and see the difference it can make for your business.
+            Get started with our HR solution today and see the difference it can make for your organization.
           </p>
           <motion.a
             href="#contact"
@@ -207,4 +207,4 @@ const CRMService = () => {
   );
 };
 
-export default CRMService; 
+export default HRService; 
