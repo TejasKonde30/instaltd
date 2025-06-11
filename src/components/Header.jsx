@@ -30,9 +30,9 @@ const Header = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5, type: 'spring' }}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 md:py-6 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto flex items-center gap-4 md:gap-6 py-4 md:py-6 px-4 md:px-8">
         <motion.div 
-          className="flex items-center gap-2 md:gap-3"
+          className="flex items-center"
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 400, damping: 10 }}
         >
@@ -40,7 +40,7 @@ const Header = () => {
         </motion.div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8 text-lg font-medium">
+        <nav className="ml-80 hidden md:flex gap-6 text-lg font-medium">
           {navItems.map((item, index) => (
             <motion.div
               key={item.name}
@@ -70,7 +70,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-gray-900 hover:text-blue-600 transition-colors duration-200"
+          className="ml-50 md:hidden text-gray-900 hover:text-blue-600 transition-colors duration-200 mr-2 py-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
