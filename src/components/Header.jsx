@@ -64,6 +64,11 @@ const Header = () => {
           className="hidden md:block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => {
+            const subject = encodeURIComponent('Contact Inquiry - Insta.Ltd');
+            const body = encodeURIComponent('Hello,\n\nI am interested in learning more about your services.\n\nBest regards,');
+            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=contact@insta.ltd&su=${subject}&body=${body}`, '_blank');
+          }}
         >
           Contact Us
         </motion.button>
@@ -111,6 +116,11 @@ const Header = () => {
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-xs"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  const subject = encodeURIComponent('Contact Inquiry - Insta.Ltd');
+                  const body = encodeURIComponent('Hello,\n\nI am interested in learning more about your services.\n\nBest regards,');
+                  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=contact@insta.ltd&su=${subject}&body=${body}`, '_blank');
+                }}
               >
                 Contact Us
               </motion.button>
