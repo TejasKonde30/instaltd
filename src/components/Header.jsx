@@ -17,11 +17,7 @@ const Header = () => {
 
   return (
     <motion.header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/80 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.12)]' 
-          : 'bg-gradient-to-r from-blue-50/50 via-white/50 to-purple-50/50 backdrop-blur-sm'
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 bg-[#FFFFFF] shadow-sm`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, type: 'spring' }}
